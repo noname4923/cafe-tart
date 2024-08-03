@@ -1,0 +1,15 @@
+[ 사용 기술 스택 ]
+
+Lang : Java17
+Framwork : SpringBoot 2.7.5
+Build Tool : Gradle
+Test : JUnit 5
+ETC : Lombok
+
+[Lombok 설치]
+ - Lombok jar 다운로드 및 설정 (IDE와 무관)
+ - Lombok 공식 사이트(https://projectlombok.org/)에서 Lombok jar 파일을 다운로드
+ - 다운로드한 jar 파일을 실행하면 설치 마법사가 나오며, 설치 마법사에서 사용하는 IDE를 선택하고 설치 진행
+
+ 
+ Fegefeuer(페게포이어)는 연옥이란 의미의 독어이다

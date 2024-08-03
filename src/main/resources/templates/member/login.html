@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="kor" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{fragments/header}">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Your website description here">
+<meta name="author" content="Your Name">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="/css/pages/login.css" rel="stylesheet">
+<!-- 로그인 JS -->
+<script type="text/javascript" src="/js/member/login.js?date=20240725"></script>
+<title>로그인</title>
+</head>
+
+
+
+
+<body>
+	<div layout:fragment="content">
+		<div class="container">
+			<div class="login-form">
+				<h1>로그인</h1>
+				<div class="form-group">
+					<label for="email">이메일</label> 
+					<input type="email" id="email" name="email" required>
+				</div>
+				<div class="form-group">
+					<label for="password">비밀번호</label> 
+					<input type="password" id="password" name="password" required>
+				</div>
+				<div class="form-group">
+					<button type="button" id="login" onclick="login()">로그인</button>
+				</div>
+				<div class="form-footer">
+					<p>
+						계정이 없으신가요? <a href="/member/join">회원가입</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
