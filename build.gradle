@@ -7,7 +7,7 @@ plugins {
 	id 'war'
 }
 
-group = 'com.ntablog'
+group = 'com.cafetart'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
@@ -16,7 +16,7 @@ bootWar {
 }
 
 war {
-	archiveName="ntablog.war"
+	archiveName="cafetart.war"
 	enabled = true
 }
 

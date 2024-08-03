@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cafe.tart.api.repository.MemberMapper">
+
+	<!-- TEST -->
+	<select id="selectMemberInfo"  resultType="com.cafe.tart.api.domain.member.MemberVO">
+		/* memberMapper.selectMemberInfo */
+	
+		SELECT  member_id AS memberId
+				        , member_cd AS memberCd
+				        , join_cd AS joinCd
+				        , sns_id AS snsId
+				        , email AS email
+				        , nm AS nm
+				        , birth AS birth
+				        , mobile AS mobile
+				        , psnl_yn AS psnlYn
+				        , psnl_consign_yn AS psnlConsignYn
+				        , psnl_full_agr_yn AS psnlFullAgrYn
+		FROM MEMBER_MST
+		LIMIT 0, 1000
+	</select>
+	
+	<select id="selectLoginMemberInfo"  resultType="com.cafe.tart.api.domain.member.MemberVO"  parameterType="com.cafe.tart.api.domain.member.MemberVO">
+		/* memberMapper.selectLoginMemberInfo */
+	
+		SELECT   member_id AS memberId
+		                , password AS password
+				        , member_cd AS memberCd
+				        , join_cd AS joinCd
+				        , sns_id AS snsId
+				        , email AS email
+				        , nm AS nm
+				        , birth AS birth
+				        , mobile AS mobile
+				      
+		FROM MEMBER_MST
+		WHERE email = #{email }
+		 /* 차후 복호화 하는 프로시저 작성 필요 */
+        AND password = #{password }
+	</select>
+	
+	
+</mapper>
