@@ -33,14 +33,14 @@ repositories {
 dependencies {
 
 /*  JSP 사용 시 */
-//	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
-//	implementation 'org.apache.tiles:tiles-jsp:3.0.8'
-//	implementation 'javax.servlet:jstl:1.2'
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	implementation 'org.apache.tiles:tiles-jsp:3.0.8'
+	implementation 'javax.servlet:jstl:1.2'
 	
 /*  Thymeleaf 사용 시 */
-	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-	/* - 기본 레이아웃 템플릿 */
-	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:3.0.0'
+//	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+/* - 기본 레이아웃 템플릿 */
+//	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:3.0.0'
 
 	implementation 'org.springframework.boot:spring-boot-starter-batch'
 //	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
