@@ -5,6 +5,7 @@ import javax.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import lombok.RequiredArgsConstructor;
 
@@ -22,7 +23,8 @@ public class MainController {
 	 * @author nta
 	 */
 	@RequestMapping(value = "/")
-	public String index(Model model, HttpSession session) {
+	//public String index(Model model, HttpSession session) {
+	public ModelAndView index(Model model, HttpSession session) {
 		
 		System.out.println(":::: Java Main index Entry 한글 테스트 ::::");
 		
@@ -42,6 +44,7 @@ public class MainController {
 	        //model.addAttribute("loggedIn", false);
 	    }
 		
-		return "main";
+		//return "main";
+	    return new ModelAndView("Home");
 	}
 }

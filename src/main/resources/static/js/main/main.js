@@ -1,5 +1,9 @@
-/* [NTA-blog] 메인 JS */
+/* [Cafe-tart] 메인 JS */
+
+
 $(document).ready(function() {
+	
+	alert('빡침3');
 	
 	var swiper = new Swiper('.swiper-container', {
 		slidesPerView: 1,

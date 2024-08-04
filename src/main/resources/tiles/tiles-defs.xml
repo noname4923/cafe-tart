@@ -1,0 +1,13 @@
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/views/template.jsp">
+        <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+        <put-attribute name="content" value="기본 내용" />
+        <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+    </definition>
+
+    <definition name="Home" extends="baseLayout">
+        <put-attribute name="title" value="Cafe-Tart(가칭)" />
+        <put-attribute name="content" value="/WEB-INF/views/main.jsp" />
+    </definition>
+</tiles-definitions>
