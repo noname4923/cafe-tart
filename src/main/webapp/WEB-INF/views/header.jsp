@@ -11,7 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <!-- CSS -->
-<link href="/css/common/header.css" rel="stylesheet">
+<link href="/css/common/common.css" rel="stylesheet">
 <link href="/css/common/bootstrap.css" rel="stylesheet">
 <link href="/css/common/navbar.css" rel="stylesheet">
 
@@ -21,13 +21,17 @@
 <script src="/js/common/jquery-3.6.3.min.js"></script>
 
 <!-- Cafe-Tart 파비콘 -->
-<link rel="icon" href="/ntaProto.ico">
+<link rel="icon" href="/favicon.ico">
 </head>
 <body>
 	<header class="header">
-		<div class="logo">블로그 로고</div>
+		<div class="logo">
+			<img alt="" src="/img/title/cafeTart_title.png">
+		</div>
 		<div class="nav">
-			<a href="#">홈</a> <a href="#">블로그</a> <a href="#">구독</a>
+			<a href="#">홈</a> 
+			<a href="#">브랜드 소개</a>
+			<a href="#">타르트 스토어</a>
 		</div>
 
 		<!-- 권한 영역 -->
@@ -35,7 +39,8 @@
 			<!-- 로그인 상태라면,  -->
 			<c:if test="${pageContext.request.getSession().getAttribute('member') != null}">
 				<!-- 로그아웃 페이지 이동 -->
-				<a href="/member/logout"> <img alt="로그아웃" src="/img/logout.svg">
+				<a href="/member/logout"> 
+					<img alt="로그아웃" src="/img/logout.svg">
 				</a>
 				<!-- 마이페이지 페이지 이동 -->
 				<a href="/member/mypage"> <img alt="마이페이지" src="/img/mypage.svg">
