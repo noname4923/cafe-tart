@@ -30,20 +30,29 @@
             <h1>미지타르트에 오신 걸 환영해요!</h1>
             <p>포르투칼의 파스테이스 드 벨렝의 맛을 재현한 맛!</p>
         </div>
-        
+
         <!-- Swiper -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="/img/deploy_products/eggTart001.png" alt="에그타르트 001"></div>
-                <div class="swiper-slide"><img src="/img/deploy_products/eggTart002.png" alt="에그타르트 002"></div>
-                <div class="swiper-slide"><img src="/img/deploy_products/eggTart003.png" alt="에그타르트 003"></div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Navigation -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="/img/deploy_products/eggTart001.png" alt="에그타르트 001">
+				</div>
+				<div class="swiper-slide">
+					<img src="/img/deploy_products/eggTart002.png" alt="에그타르트 002">
+				</div>
+				<div class="swiper-slide">
+					<img src="/img/deploy_products/eggTart003.png" alt="에그타르트 003">
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- Add Navigation -->
+			<!-- 
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			 -->
+		</div>
+
+	</div>
 </body>
 </html>
